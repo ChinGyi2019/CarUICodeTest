@@ -462,10 +462,11 @@
                     android:layout_width="100dp"
                     android:layout_height="200dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/car_png"
+                    android:src="@drawable/map_png"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
@@ -559,7 +560,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/car_png"
+                            android:src="@drawable/map_png"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -570,7 +571,7 @@
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/car_png"
+                            android:src="@drawable/map_png"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/image_one"
                             app:layout_constraintTop_toTopOf="parent"
@@ -582,7 +583,7 @@
                             android:layout_height="40dp"
                             android:layout_marginStart="8dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/car_png"
+                            android:src="@drawable/map_png"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/image_two"
                             app:layout_constraintTop_toTopOf="parent"
@@ -616,6 +617,7 @@
             android:layout_height="wrap_content"
 
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -683,6 +685,7 @@
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:background="@color/color_gray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/estimated_view" />
@@ -724,6 +727,7 @@
                 android:id="@+id/view3"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:background="@color/color_gray"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/need_help_view" />
